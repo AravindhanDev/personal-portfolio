@@ -30,12 +30,12 @@
 }
 
 .navbar-toggler {
-  margin-right: 0.9rem;
+  margin-right: 1.3rem;
 }
 
 #navbar {
   position: fixed;
-  width: 100vw;
+  width: 99vw;
   z-index: 1;
 }
 
@@ -266,7 +266,7 @@
 
   #contacts {
     padding-top: 5rem;
-    height: 80vh;
+    height: 89vh;
     margin: 0;
   }
 

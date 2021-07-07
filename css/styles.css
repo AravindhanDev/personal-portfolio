@@ -30,7 +30,7 @@
 }
 
 .navbar-toggler {
-  margin-right: 1.3rem;
+  margin-right: 1.2rem;
 }
 
 #navbar {
@@ -251,10 +251,6 @@
 }
 
 @media all and (max-width: 500px) {
-  body {
-    width: 100%;
-  }
-
   .navbar {
     width: 100%;
   }
@@ -270,7 +266,7 @@
 
   #contacts {
     padding-top: 5rem;
-    height: 89vh;
+    height: 90vh;
     margin: 0;
   }
 

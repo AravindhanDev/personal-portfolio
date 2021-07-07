@@ -30,7 +30,7 @@
 }
 
 .navbar-toggler {
-  margin-right: 1.5rem;
+  margin-right: 1.3rem;
 }
 
 #navbar {
@@ -251,6 +251,10 @@
 }
 
 @media all and (max-width: 500px) {
+  body {
+    width: 100%;
+  }
+
   .navbar {
     width: 100%;
   }

@@ -30,12 +30,12 @@
 }
 
 .navbar-toggler {
-  margin-right: 0.5rem;
+  margin-right: 0.9rem;
 }
 
 #navbar {
   position: fixed;
-  width: 100%;
+  width: 100vw;
   z-index: 1;
 }
 
@@ -73,7 +73,7 @@
   background-color: var(--bg2);
   color: var(--white);
   height: 100%;
-  width: 100%;
+  width: 100vw;
 }
 
 #projects h1 {
@@ -233,7 +233,7 @@
   }
 
   #contacts {
-    height: 110%;
+    height: 110vh;
   }
 
   #contacts ul li a {
@@ -266,7 +266,8 @@
 
   #contacts {
     padding-top: 5rem;
-    height: 100vh;
+    height: 80vh;
+    margin: 0;
   }
 
   #contacts h1 {

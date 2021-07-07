@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #fff;
+  --red: #be3144;
+  --bg2: #45567d;
+  --bg3: #303841;
+  --code: #e1701a;
+  /* fonts  */
+  --font1: Poppins, sans-serif;
+  --font2: Raleway, sans-serif;
+}
+
+.nav-link {
+  font-weight: 400;
+  font-size: 22px;
+  margin-left: 3rem;
+}
+
+.nav-link:hover {
+  background-color: #000;
+}
+
+.navbar-brand img {
+  width: 13rem;
+  padding-left: 1.5rem;
+}
+
+#navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+#welcome-section {
+  height: 100vh;
+  display: flex;
+  width: 100vw;
+  background: #000000;
+  background: -webkit-linear-gradient(to right, #434343, #000000);
+  background: linear-gradient(to right, #434343, #000000);
+}
+
+.container {
+  margin-top: 18rem;
+  margin: 18rem 0 0 6rem;
+  text-align: center;
+}
+
+.container h1 {
+  color: var(--white);
+  font-family: var(--font2);
+  font-weight: 700;
+  font-size: 60px;
+}
+
+.container p {
+  color: var(--red);
+  font-family: var(--font1);
+  font-size: 2rem;
+  font-weight: 200;
+  font-style: italic;
+}
+
+#projects {
+  background-color: var(--bg2);
+  color: var(--white);
+  height: 90%;
+  width: 102%;
+}
+
+#projects h1 {
+  font-family: var(--font2);
+  font-weight: lighter;
+  padding: 8% 0 1%;
+  text-align: center;
+  width: 100%;
+  font-weight: 700;
+}
+
+#projects hr {
+  width: 45%;
+  background: var(--white);
+  height: 0.1rem;
+  margin: 0 auto;
+}
+
+/* projects  */
+
+.project {
+  padding: 1rem 2.3rem 0 2rem;
+}
+
+.project img {
+  border-radius: 3px;
+  margin-top: 3rem;
+  width: 95%;
+  height: 20rem;
+}
+
+.project p {
+  background-color: var(--bg3);
+  width: 95%;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.project img:hover {
+  box-shadow: 3px 2px 10px 2px rgba(2, 2, 2, 0.5);
+}
+
+.project p span {
+  padding: 0 1.5rem;
+  color: var(--code);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.project:hover p span {
+  opacity: 1;
+}
+
+.btn {
+  margin: 3rem 45% 8rem;
+  padding: 0.7rem 1rem;
+  font-size: 1.2rem;
+  background-color: var(-red);
+  border: none;
+  transition: background-color 0.5s;
+  font-weight: 400;
+  outline: none;
+}
+
+.btn:hover {
+  background-color: var(--red);
+}
+
+/* contacts */
+
+#contacts {
+  height: 89vh;
+  width: 100%;
+  background: var(--bg3);
+  padding-top: 10rem;
+  color: var(--white);
+  text-align: center;
+}
+
+#contacts h1 {
+  font-family: var(--font2);
+  font-size: 60px;
+  font-weight: 700;
+}
+
+#contacts p {
+  font-family: var(--font1);
+  font-size: 18px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+}
+#profile-link {
+  padding: 0 1rem 4rem;
+  color: var(--white);
+  font-size: 1.7rem;
+}
+
+#profile-link:hover {
+  text-decoration: none;
+}
+
+#contacts hr {
+  border-width: 3px;
+  background: var(--red);
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5rem;
+}
+
+@media all and (max-width: 770px) {
+  .container {
+    margin-left: 0;
+  }
+  .container h1 {
+    font-size: 3rem;
+  }
+
+  #projects h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 1.8rem;
+  }
+
+  #projects hr {
+    width: 85%;
+    margin-bottom: 1rem;
+  }
+
+  #projects img {
+    margin: 0 0 0 0.5rem;
+    height: 15rem;
+  }
+
+  #projects p {
+    margin-left: 0.5rem;
+  }
+
+  #projects .btn {
+    margin-left: 11.3rem;
+  }
+
+  #contacts {
+    height: 110%;
+  }
+
+  #contacts ul li a {
+    display: flex;
+    justify-content: center;
+  }
+
+  #profile-link {
+    font-size: 1.2rem;
+  }
+
+  #footer {
+    padding-bottom: 2.3rem;
+  }
+}
+
+@media all and (max-width: 500px) {
+  #welcome-section h1 {
+    font-size: 2.5rem;
+  }
+
+  #projects h1 {
+    font-size: 1.4rem;
+  }
+
+  #contacts {
+    padding-top: 5rem;
+  }
+
+  #contacts h1 {
+    padding-top: 0;
+    font-size: 2.1rem;
+  }
+
+  #projects .btn {
+    margin-left: 7rem;
+  }
+
+  .navbar-brand img {
+    width: 10rem;
+  }
+}
